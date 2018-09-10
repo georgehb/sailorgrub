@@ -1,0 +1,83 @@
+# Dharma GRUB2 theme version 1.0.
+#
+# Designed by Malcer <malcer [at] gmx [dot] com> <malcer.deviantart.com> for Chakra Project <http://www.chakra-project.org/>
+#
+# Some rights reserved. This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License. | 2012
+#
+# All operating system logos (except "os" and "unknown") are modifications of original trademarks. All rights for each project/company.
+# "drive" icon was made under Oxygen-KDE drive icon by Oxygen Team, modifications by Malcer.
+# ---- END ORIGINAL THEME ----
+
+# Slightly modified by intelfx <intelfx100@gmail.com>
+# Original license(s) apply.
+# Terminus font is used, licensed as SIL Open Font License 1.1.
+
+# General
+
+title-text: ""
+title-font: "Corporate Logo Maru Regular 30"
+title-color: "#E50B16"
+message-font: "Corporate Logo Maru Regular 30"
+message-color: "#C8D608"
+message-bg-color: "#C8D608"
+desktop-image: "background.png"
+desktop-color: "#000000"
+terminal-font: "Corporate Logo Maru Regular 12"
+
+# OS list
+# アーチ・リナクス          Arch Linux
+# ウィンドウズ7             Windows 7
+# フェドラ                  Fedora
+# ウィンドウズ7リカバー     Windows 7 Recovery
+
++ boot_menu {
+		left = 15%
+		width = 70%
+		top = 29%
+		height = 42%
+		item_font = "Corporate Logo Maru Regular 30"
+		selected_item_font = "Corporate Logo Maru Regular 30"
+		item_color = "#0E4FB6"
+		selected_item_color = "#FCCA2B"
+		item_height = 64
+		item_padding = 15
+		item_spacing = 5
+		icon_width = 64
+		icon_height = 64
+		item_icon_space = 20
+		selected_item_pixmap_style= "select_bkg_*.png"
+		menu_pixmap_style = ""
+		scrollbar = true
+		scrollbar_width = 24
+		scrollbar_thumb = ""
+		scrollbar_frame = ""
+}
+
+# Time progress Bar
+
++ progress_bar {
+		id = "__timeout__"
+		left = 30%
+		width = 170
+		top = 73%
+		height = 23
+		show_text = false
+		font = "Terminus Regular 12"
+		text_color = "#ff009f"
+		text = ""
+		bar_style = "progress_bar_*.png"
+		highlight_style = "progress_highlight_*.png"
+}
+
+# GRUB Options
+
++ hbox {
+		top = 100%-35
+		left = 20%
+		+ label {text = "Enter: " font = "Terminus Bold 12" color = "#ff009f" align = "left"}
+		+ label {text = "ブート選択     " font = "Corporate Logo Maru Regular 12" color = "#fcca2b" align = "left"}
+		+ label {text = "E: " font = "Terminus Bold 12" color = "#ff009f" align = "left"}
+		+ label {text = "選択を編集する     " font = "Corporate Logo Maru Regular 12" color = "#fcca2b" align = "left"}
+		+ label {text = "C: " font = "Terminus Bold 12" color = "#ff009f" align = "left"}
+		+ label {text = "GRUBコマンドライン" font = "Corporate Logo Maru Regular 12" color = "#fcca2b" align = "left"}
+}
